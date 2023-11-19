@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Warriors</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            border-radius: 0px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .Gym{
+            height: 900px;
+            background: url('kettlebell-3293475_1280.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        .left{
+        display: inline-block;
+        margin: 5px 15px;
+        position: absolute;
+        text-align: center;
+        }
+
+        .left img{
+            width: 70px;
+        }
+        .left div{
+        font-size: 12px
+        }
+        .mid{
+            border: 2px solid gray;
+            padding: 5px 5px;
+            display:block;
+            margin:10px auto;
+            width: 40%;
+            
+        }
+
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            
+            display: inline-block;
+            font-size: 17px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+           padding: 10px 10px;
+        
+        }
+        
+        .navbar li a:hover{
+            background-color: lightseagreen;
+        }
+        .right{
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        
+        
+        .btn:hover{
+            background-color: plum;
+        }
+        .btn{
+            font-size: 16px;
+            padding: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container{
+            border: 2px solid gray;
+            display: block;
+            margin: 450px 10px;
+            padding: 1px 1px;
+            width: 30%;
+            height: 39%;
+            border-radius: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: sticky;
+        }
+        .container h1{
+            font-size: 24px;
+            text-align: center;
+            color: lightgreen;
+        }
+        .container form{
+            text-align: center;
+            font-size: 15px;
+        }
+       
+        .Why{
+            display: flex;
+            background-color: rgb(168, 243, 168);
+            /* border: 2px solid green; */
+            height: 500px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item{
+            width: 550px;
+            height: 200px;
+            background-color: lightblue;
+            border: 3px solid darkgreen;
+            padding: 2px;
+            margin: 20px; 
+        }
+        .item h3{
+            text-align: center;
+            color: purple;
+        }
+        .item p{
+            text-align: center;
+        }
+        .item img{
+            width: 50px;
+        }
+        .footer{
+            border-left: 3px solid pink;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: center;
+            background: url('cherry-blossoms-6196363_1280.jpg');
+            color: black;
+            border:3px solid green;
+            
+        }
+        .fill{
+            /* border: 2px solid green; */
+            height: 200px;
+            width: 200px;
+            padding: 10px 10px;
+            color: white;
+        }
+        .fill h3{
+            color: purple;
+        }
+        #fill3{
+            width: 240px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="Gym">
+        <header class="header">
+            <!-- Logo -->
+            <div class="left">
+                <img src="Capture.PNG" alt="My Logo">
+                <div>Wellness Warriors</div>
+            </div>
+            <!-- Navigation Menu -->
+            <div class="mid">
+            <ul class="navbar">
+                <li><a href="www.google.com" class="active">About Us</a></li>
+                <li><a href="">Fitness Centers </a></li>
+                <li><a href="">Classes</a></li>
+                <li><a href="">Membership</a></li>
+            </ul>
+            </div>
+            <!-- Additional Icons -->
+            <div class="right">
+                <button class="btn" >Contact</button>
+                <button class="btn">Email Us</button>
+            </div>
+        </header>
+        <div class="container">
+            <h1>Join Wellness Warriors</h1>
+            <form action="noaction.php">
+                <div class="form">
+                    Full Name:<input type="text" name="myName" id="Name">
+                </div>
+                <hr>
+                <div class="form">
+                    Enter your Gender: Male<input type="radio" name="" id=""> Female<input type="radio" name="" id="">
+                </div>
+                <hr>
+                <div class="form">
+                    Enter your Age:<input type="number" name="" id="">
+                </div>
+                <hr>
+                <div class="form">
+                    Enter your Email:<input type="email" name="" id="">
+                </div>
+                <hr>
+                <div class="form">
+                    Street Address:<input type="text" name="" id="">
+                </div>
+                <hr>
+                <div class="form">
+                    Country:<select name="" id="">
+                        <option value="">India</option>
+                        <option value="">Australia</option>
+                        <option value="">United States</option>
+                        <option value="">Bangladesh</option>
+                        <option value="">Canada</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="form">
+                    City:<input type="text" name="" id="">
+                </div>
+                <hr>
+                <div class="form">
+                    <button type="submit">Submit Form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <h1 style="text-align: center; color: rgb(240, 46, 111);">WHY WELLNESS WARRIORS?</h1>
+    <div class="Why">
+        
+        <div class="item" id="Adv1">
+            <img src="1.PNG" alt="">
+           <h3>Support</h3>
+           
+           <p>Every member gets a free, personalized Get Started Plan when they join. Our friendly, professional staff is trained to help you along your fitness journey, no matter how much support you need.</p>
+        </div>
+        <div class="item" id="Adv2">
+            <img src="2.PNG" alt="">
+            <h3>Tools and Training</h3>
+           
+           <p>Getting to a healthier place is about more than going to the gym. That's why we offer personal training and classes when you're here, and the right tools to keep you on track when you're not.</p>
+            </div>
+        <div class="item" id="Adv3">
+            <img src="3.PNG" alt="">
+            <h3>Convenience</h3>
+           
+           <p>With 24/7 access to more than 1,000 locations worldwide, you're joining the most convenient gym on the planet.</p>
+        </div>
+        <div class="item" id="Adv4">
+            <img src="4.PNG" alt="">
+            <h3>Community</h3>
+         
+           <p>
+            You're not just joining a gym. You're joining a supportive community of like-minded people who are here to give you the encouragement you need.
+           </p>
+        </div>
+        
+    </div>
+<br>
+<br>
+    <footer class="footer">
+        <div class="fill" id="fill1">
+            <h3>| ABOUT US</h3>
+            <p>Company background</p>
+            <p>Press room</p>
+            <p>Reviews & Testimonials</p>
+        </div>
+        <div class="fill" id="fill2">
+            <h3>| MEMBERSHIP</h3>
+            <p>Membership options</p>
+            <p>Membership benefits</p>
+            <p>Corporate membership</p>
+            <p>Frequently asked questions</p>
+        </div>
+        <div class="fill" id="fill3">
+            <h3>| CUSTOMER SERVICES</h3>
+            <p>Members' Area</p>
+            <p>FAQs</p>
+            <p>Membership Enquiry</p>
+        </div>
+        <div class="fill" id="fill4">
+            <h3>| CLUBS</h3>
+            <p>Club finder</p>
+            <p>Club operating hours</p>
+            <p>Get 1 Day Free Pass</p>
+        </div>
+    </footer>
+</body>
+</html>
